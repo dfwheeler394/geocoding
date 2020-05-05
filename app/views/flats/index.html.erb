@@ -24,6 +24,12 @@
   </tbody>
 </table>
 
+<div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['pk.eyJ1IjoiZGZ3aGVlbGVyMzk0IiwiYSI6ImNrMng0OTAzczA3Z3UzZ241cHp4aXQxenMifQ.bi3xJgh5Buiiq4fmWdKRBA'] %>">
+</div>
+
 <br>
 
 <%= link_to 'New Flat', new_flat_path %>
